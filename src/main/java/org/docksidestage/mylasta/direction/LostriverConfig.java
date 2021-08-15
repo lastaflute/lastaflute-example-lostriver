@@ -46,7 +46,7 @@ public interface LostriverConfig extends LostriverEnv {
     /** The key of the configuration. e.g. 315360000 */
     String COOKIE_ETERNAL_EXPIRE = "cookie.eternal.expire";
 
-    /** The key of the configuration. e.g. HRB */
+    /** The key of the configuration. e.g. LRV */
     String COOKIE_REMEMBER_ME_LOSTRIVER_KEY = "cookie.remember.me.lostriver.key";
 
     /**
@@ -149,7 +149,7 @@ public interface LostriverConfig extends LostriverEnv {
 
     /**
      * Get the value for the key 'cookie.remember.me.lostriver.key'. <br>
-     * The value is, e.g. HRB <br>
+     * The value is, e.g. LRV <br>
      * comment: The cookie key of remember-me for Lostriver #change_it_first
      * @return The value of found property. (NotNull: if not found, exception but basically no way)
      */

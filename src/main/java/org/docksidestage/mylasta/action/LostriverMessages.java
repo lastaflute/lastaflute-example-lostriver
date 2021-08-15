@@ -149,9 +149,6 @@ public class LostriverMessages extends LostriverLabels {
     /** The key of the message: double submit might be requested */
     public static final String ERRORS_APP_DOUBLE_SUBMIT_REQUEST = "{errors.app.double.submit.request}";
 
-    /** The key of the message: the account already exists so input others */
-    public static final String ERRORS_SIGNUP_ACCOUNT_ALREADY_EXISTS = "{errors.signup.account.already.exists}";
-
     /** The key of the message: the {1} already {0} so input others */
     public static final String ERRORS_XXXXXXXXXXXXXX = "{errors.xxxxxxxxxxxxxx}";
 
@@ -754,20 +751,6 @@ public class LostriverMessages extends LostriverLabels {
     public LostriverMessages addErrorsAppDoubleSubmitRequest(String property) {
         assertPropertyNotNull(property);
         add(property, new UserMessage(ERRORS_APP_DOUBLE_SUBMIT_REQUEST));
-        return this;
-    }
-
-    /**
-     * Add the created action message for the key 'errors.signup.account.already.exists' with parameters.
-     * <pre>
-     * message: the account already exists so input others
-     * </pre>
-     * @param property The property name for the message. (NotNull)
-     * @return this. (NotNull)
-     */
-    public LostriverMessages addErrorsSignupAccountAlreadyExists(String property) {
-        assertPropertyNotNull(property);
-        add(property, new UserMessage(ERRORS_SIGNUP_ACCOUNT_ALREADY_EXISTS));
         return this;
     }
 
