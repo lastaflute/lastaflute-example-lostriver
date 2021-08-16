@@ -45,7 +45,6 @@ import org.lastaflute.web.direction.FwWebDirection;
 import org.lastaflute.web.path.ActionAdjustmentProvider;
 import org.lastaflute.web.ruts.multipart.MultipartResourceProvider;
 import org.lastaflute.web.servlet.cookie.CookieResourceProvider;
-import org.lastaflute.web.servlet.filter.cors.CorsHook;
 import org.lastaflute.web.servlet.request.UserLocaleProcessProvider;
 import org.lastaflute.web.servlet.request.UserTimeZoneProcessProvider;
 
@@ -137,7 +136,6 @@ public class LostriverFwAssistantDirector extends CachedFwAssistantDirector {
         direction.directAdjustment(createActionAdjustmentProvider());
         direction.directMessage(nameList -> nameList.add("lostriver_message"), "lostriver_label");
         direction.directApiCall(createApiFailureHook());
-        direction.directCors(new CorsHook("http://localhost:5000")); // #change_it
         direction.directMultipart(createMultipartResourceProvider());
     }
 
