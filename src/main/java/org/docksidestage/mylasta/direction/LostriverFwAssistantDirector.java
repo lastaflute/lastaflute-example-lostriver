@@ -99,7 +99,8 @@ public class LostriverFwAssistantDirector extends CachedFwAssistantDirector {
     }
 
     protected SecurityResourceProvider createSecurityResourceProvider() { // #change_it_first
-        final InvertibleCryptographer inver = InvertibleCryptographer.createAesCipher("lostriver:dockside:");
+        final String appMessage = "if needed, fix settings at " + getClass().getSimpleName();
+        final InvertibleCryptographer inver = InvertibleCryptographer.createUnsupportedCipher(appMessage);
         final OneWayCryptographer oneWay = OneWayCryptographer.createSha256Cryptographer();
         return new LostriverSecurityResourceProvider(inver, oneWay);
     }
@@ -152,7 +153,8 @@ public class LostriverFwAssistantDirector extends CachedFwAssistantDirector {
     }
 
     protected CookieResourceProvider createCookieResourceProvider() { // #change_it_first
-        final InvertibleCryptographer cr = InvertibleCryptographer.createAesCipher("dockside:lostriver:");
+        final String appMessage = "if needed, fix settings at " + getClass().getSimpleName();
+        final InvertibleCryptographer cr = InvertibleCryptographer.createUnsupportedCipher(appMessage);
         return new LostriverCookieResourceProvider(config, cr);
     }
 
