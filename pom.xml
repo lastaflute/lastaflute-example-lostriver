@@ -17,7 +17,6 @@
 		<dbflute.version>1.2.5</dbflute.version>
 		<h2.jdbc.version>1.4.200</h2.jdbc.version>
 		<lastaflute.version>1.2.1</lastaflute.version>
-		<lasta.thymeleaf.version>0.4.2</lasta.thymeleaf.version>
 
 		<!-- Partner Library -->
 		<slf4j.version>1.7.12</slf4j.version>
@@ -266,11 +265,6 @@
 			<groupId>org.lastaflute</groupId>
 			<artifactId>lastaflute</artifactId>
 			<version>${lastaflute.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.lastaflute.html</groupId>
-			<artifactId>lasta-thymeleaf</artifactId>
-			<version>${lasta.thymeleaf.version}</version>
 		</dependency>
 
 		<!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->

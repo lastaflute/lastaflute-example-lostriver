@@ -40,12 +40,10 @@ import org.lastaflute.core.security.SecurityResourceProvider;
 import org.lastaflute.core.time.TimeResourceProvider;
 import org.lastaflute.db.dbflute.classification.ListedClassificationProvider;
 import org.lastaflute.db.direction.FwDbDirection;
-import org.lastaflute.thymeleaf.ThymeleafRenderingProvider;
 import org.lastaflute.web.api.ApiFailureHook;
 import org.lastaflute.web.direction.FwWebDirection;
 import org.lastaflute.web.path.ActionAdjustmentProvider;
 import org.lastaflute.web.ruts.multipart.MultipartResourceProvider;
-import org.lastaflute.web.ruts.renderer.HtmlRenderingProvider;
 import org.lastaflute.web.servlet.cookie.CookieResourceProvider;
 import org.lastaflute.web.servlet.filter.cors.CorsHook;
 import org.lastaflute.web.servlet.request.UserLocaleProcessProvider;
@@ -140,7 +138,6 @@ public class LostriverFwAssistantDirector extends CachedFwAssistantDirector {
         direction.directMessage(nameList -> nameList.add("lostriver_message"), "lostriver_label");
         direction.directApiCall(createApiFailureHook());
         direction.directCors(new CorsHook("http://localhost:5000")); // #change_it
-        direction.directHtmlRendering(createHtmlRenderingProvider());
         direction.directMultipart(createMultipartResourceProvider());
     }
 
@@ -164,10 +161,6 @@ public class LostriverFwAssistantDirector extends CachedFwAssistantDirector {
 
     protected ApiFailureHook createApiFailureHook() {
         return new LostriverApiFailureHook();
-    }
-
-    protected HtmlRenderingProvider createHtmlRenderingProvider() {
-        return new ThymeleafRenderingProvider().asDevelopment(config.isDevelopmentHere());
     }
 
     protected MultipartResourceProvider createMultipartResourceProvider() {
