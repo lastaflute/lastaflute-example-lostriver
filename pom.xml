@@ -8,7 +8,7 @@
 	<packaging>war</packaging>
 
 	<name>Lostriver</name>
-	<description>example project for LastaFlute as single project (with H2)</description>
+	<description>example project for LastaFlute as single project (without RDB)</description>
 	<url>http://dbflute.org/lastaflute</url>
 	<inceptionYear>2015</inceptionYear>
 
