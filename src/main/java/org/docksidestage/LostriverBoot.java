@@ -15,7 +15,7 @@
  */
 package org.docksidestage;
 
-import org.dbflute.jetty.JettyBoot;
+import org.dbflute.tomcat.TomcatBoot;
 
 /**
  * @author jflute
@@ -23,7 +23,7 @@ import org.dbflute.jetty.JettyBoot;
 public class LostriverBoot { // #change_it_first
 
     public static void main(String[] args) { // e.g. java -Dlasta.env=production -jar lostriver.war
-        new JettyBoot(8156, "/lostriver").asDevelopment(isDevelopment()).bootAwait();
+        new TomcatBoot(8156, "/lostriver").asDevelopment(isDevelopment()).bootAwait();
     }
 
     private static boolean isDevelopment() {
