@@ -189,7 +189,8 @@
 							<includeArtifactIds>
 								javax.servlet-api, javax.servlet.jsp, javax.servlet.jsp-api
 								, jetty-boot, jetty-all, javax.el, jetty-jsp, jetty-schemas, javax.websocket-api
-								, tomcat-boot, tomcat-embed-core, tomcat-embed-logging-juli, tomcat-jasper
+								, tomcat-boot, tomcat-embed-core, tomcat-embed-logging-juli
+								, tomcat-jasper, tomcat-jasper-el, tomcat-el-api, tomcat-jsp-api, ecj
 							</includeArtifactIds>
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
