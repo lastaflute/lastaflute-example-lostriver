@@ -149,12 +149,6 @@ public class LostriverMessages extends LostriverLabels {
     /** The key of the message: double submit might be requested */
     public static final String ERRORS_APP_DOUBLE_SUBMIT_REQUEST = "{errors.app.double.submit.request}";
 
-    /** The key of the message: the {1} already {0} so input others */
-    public static final String ERRORS_XXXXXXXXXXXXXX = "{errors.xxxxxxxxxxxxxx}";
-
-    /** The key of the message: the {1} already {4} so input others */
-    public static final String ERRORS_YYYYYYYYYYYYYY = "{errors.yyyyyyyyyyyyyy}";
-
     /**
      * Add the created action message for the key 'constraints.AssertFalse.message' with parameters.
      * <pre>
@@ -751,38 +745,6 @@ public class LostriverMessages extends LostriverLabels {
     public LostriverMessages addErrorsAppDoubleSubmitRequest(String property) {
         assertPropertyNotNull(property);
         add(property, new UserMessage(ERRORS_APP_DOUBLE_SUBMIT_REQUEST));
-        return this;
-    }
-
-    /**
-     * Add the created action message for the key 'errors.xxxxxxxxxxxxxx' with parameters.
-     * <pre>
-     * message: the {1} already {0} so input others
-     * </pre>
-     * @param property The property name for the message. (NotNull)
-     * @param arg0 The parameter arg0 for message. (NotNull)
-     * @param arg1 The parameter arg1 for message. (NotNull)
-     * @return this. (NotNull)
-     */
-    public LostriverMessages addErrorsXxxxxxxxxxxxxx(String property, String arg0, String arg1) {
-        assertPropertyNotNull(property);
-        add(property, new UserMessage(ERRORS_XXXXXXXXXXXXXX, arg0, arg1));
-        return this;
-    }
-
-    /**
-     * Add the created action message for the key 'errors.yyyyyyyyyyyyyy' with parameters.
-     * <pre>
-     * message: the {1} already {4} so input others
-     * </pre>
-     * @param property The property name for the message. (NotNull)
-     * @param arg1 The parameter arg1 for message. (NotNull)
-     * @param arg4 The parameter arg4 for message. (NotNull)
-     * @return this. (NotNull)
-     */
-    public LostriverMessages addErrorsYyyyyyyyyyyyyy(String property, String arg1, String arg4) {
-        assertPropertyNotNull(property);
-        add(property, new UserMessage(ERRORS_YYYYYYYYYYYYYY, arg1, arg4));
         return this;
     }
 }

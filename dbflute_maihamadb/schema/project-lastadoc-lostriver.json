@@ -1,7 +1,7 @@
 {
   "actionDocMetaList": [
     {
-      "url": "/root/",
+      "url": "/",
       "typeName": "org.docksidestage.app.web.RootAction",
       "simpleTypeName": "RootAction",
       "description": "@author jflute",
@@ -20,7 +20,7 @@
         "publicName": null,
         "typeName": "org.lastaflute.web.response.HtmlResponse",
         "simpleTypeName": "HtmlResponse",
-        "value": "HtmlResponse.fromForwardPath(\"/index.html\")",
+        "value": "HtmlResponse.fromRedirectPath(\"/index.html\")",
         "description": null,
         "comment": null,
         "annotationList": [],
