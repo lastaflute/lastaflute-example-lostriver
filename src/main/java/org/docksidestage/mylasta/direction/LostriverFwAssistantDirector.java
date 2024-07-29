@@ -15,8 +15,6 @@
  */
 package org.docksidestage.mylasta.direction;
 
-import javax.annotation.Resource;
-
 import org.docksidestage.mylasta.direction.sponsor.LostriverActionAdjustmentProvider;
 import org.docksidestage.mylasta.direction.sponsor.LostriverApiFailureHook;
 import org.docksidestage.mylasta.direction.sponsor.LostriverCookieResourceProvider;
@@ -47,6 +45,8 @@ import org.lastaflute.web.ruts.multipart.MultipartResourceProvider;
 import org.lastaflute.web.servlet.cookie.CookieResourceProvider;
 import org.lastaflute.web.servlet.request.UserLocaleProcessProvider;
 import org.lastaflute.web.servlet.request.UserTimeZoneProcessProvider;
+
+import jakarta.annotation.Resource;
 
 /**
  * @author jflute

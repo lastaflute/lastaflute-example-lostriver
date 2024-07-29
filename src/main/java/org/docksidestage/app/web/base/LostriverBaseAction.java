@@ -15,8 +15,6 @@
  */
 package org.docksidestage.app.web.base;
 
-import javax.annotation.Resource;
-
 import org.dbflute.optional.OptionalThing;
 import org.docksidestage.app.logic.context.AccessContextLogic;
 import org.docksidestage.mylasta.action.LostriverHtmlPath;
@@ -30,6 +28,8 @@ import org.lastaflute.web.ruts.process.ActionRuntime;
 import org.lastaflute.web.servlet.request.RequestManager;
 import org.lastaflute.web.validation.ActionValidator;
 import org.lastaflute.web.validation.LaValidatable;
+
+import jakarta.annotation.Resource;
 
 /**
  * @author jflute

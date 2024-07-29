@@ -18,11 +18,11 @@ package org.docksidestage.startup;
 import java.io.IOException;
 import java.util.Arrays;
 
-import javax.annotation.Resource;
-
 import org.dbflute.infra.manage.refresh.DfRefreshResourceRequest;
 import org.docksidestage.app.logic.startup.StartupLogic;
 import org.docksidestage.unit.UnitLostriverTestCase;
+
+import jakarta.annotation.Resource;
 
 /**
  * @author jflute
